@@ -86,7 +86,6 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    max-width: 1200px;
     margin: 0 auto;
     border: 1px solid #ccc;
     background-color: white;
