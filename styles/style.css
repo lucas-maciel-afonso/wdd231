@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #7ea2aa;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+header nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-list button {
+    background-color: #9C7A97;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.course-list button:hover {
+    background-color: #888DA7;
+}
+
+.course-list {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 25px;
+    background-color: #7ea2aa;
+}
+
+.certificate-menu {
+    display: flex;
+    gap: 10px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.certificate-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.flex-item {
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+footer {
+    text-align: center;
+    background-color: #7ea2aa;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .course-list button {
+        font-size: 14px;
+    }
+}

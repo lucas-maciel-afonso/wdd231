@@ -4,11 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <meta name="description" content="Course home page for Web and Computer Programming Certificate">
+    <title>Lucas M. Afonso - Course Home Page</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
 
 <body>
-    <h1>Hi!! This is a test</h1>
+
+    <header>
+        <div>
+            <img src="images/lucas.jpg" alt="Lucas M. Afonso">
+            <h2>Lucas M. Afonso</h2>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/lucas-maciel-afonso-60a2a820b/">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+
+            <section class="card">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Rio Branco, Acre</h2>
+                <img src="images/rioBranco.jpg" alt="Acre Flag" style="width: 100%; border-radius: 8px;">
+            </section>
+        </div>
+
+        <section class="course-list">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="certificate-menu">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+
+            <div class="certificate-options">
+                <button class="flex-item">CSE 110</button>
+                <button class="flex-item">WDD 130</button>
+                <button class="flex-item">CSE 111</button>
+                <button class="flex-item">CSE 210</button>
+                <button class="flex-item">WDD 131</button>
+                <button class="flex-item">WDD 231</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Lucas Maciel Afonso • Acre, Brazil</p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Get the current year
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("currentyear").innerHTML = year;
+
+        // The date the document was last modified
+        let text = document.lastModified;
+        document.getElementById("lastModified").innerHTML = "Last Modification: " + text;
+    </script>
+
 </body>
 
 </html>
