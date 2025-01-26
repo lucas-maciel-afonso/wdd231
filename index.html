@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Course home page for Web and Computer Programming Certificate">
-    <title>Lucas M. Afonso - Course Home Page</title>
+    <meta name="Lucas M. Afonso" content="Lucas M. Afonso">
+    <title>Lucas M. Afonso</title>
 
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -17,7 +23,7 @@
     <header>
         <div>
             <img src="images/lucas.jpg" alt="Lucas M. Afonso">
-            <h2>Lucas M. Afonso</h2>
+            <h1>Lucas M. Afonso</h1>
         </div>
         <nav>
             <a href="#">Home</a>
@@ -41,7 +47,7 @@
 
             <section class="card">
                 <h2>Rio Branco, Acre</h2>
-                <img src="images/rioBranco.jpg" alt="Acre Flag" style="width: 100%; border-radius: 8px;">
+                <img src="images/rioBranco.jpg" alt="Acre Flag">
             </section>
         </div>
 
@@ -73,16 +79,7 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script>
-        // Get the current year
-        const d = new Date();
-        let year = d.getFullYear();
-        document.getElementById("currentyear").innerHTML = year;
-
-        // The date the document was last modified
-        let text = document.lastModified;
-        document.getElementById("lastModified").innerHTML = "Last Modification: " + text;
-    </script>
+    <script src="scripts/getDate.js"></script>
 
 </body>
 
