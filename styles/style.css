@@ -1,13 +1,13 @@
 body {
-    font-family: "Inter", serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: black;
 }
 
 header {
-    background-color: #7ea2aa;
-    color: white;
+    background-color: #A2D2FF;
+    color: black;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@ header img {
 }
 
 header nav a {
-    color: white;
+    color: black;
     margin-left: 15px;
     text-decoration: none;
 }
@@ -44,7 +44,7 @@ main {
 }
 
 .card {
-    border: 1px solid #ccc;
+    border: 1px solid #CDB4DB;
     border-radius: 8px;
     padding: 15px;
     background-color: #f9f9f9;
@@ -57,8 +57,8 @@ main {
 }
 
 .course-list button {
-    background-color: #9C7A97;
-    color: white;
+    background-color: #FFAFCC;
+    color: black;
     border: none;
     padding: 10px;
     margin: 5px 0;
@@ -68,21 +68,21 @@ main {
 }
 
 .course-list button:hover {
-    background-color: #888DA7;
+    background-color: #FFC8DD;
 }
 
 .course-list {
-    border: 1px solid #ccc;
+    border: 1px solid #CDB4DB;
     border-radius: 8px;
     margin-top: 25px;
-    background-color: #7ea2aa;
+    background-color: #A2D2FF;
 }
 
 .certificate-menu {
     display: flex;
     gap: 10px;
     padding: 25px;
-    border: 1px solid #ccc;
+    border: 1px solid #CDB4DB;
     background-color: white;
 }
 
@@ -92,7 +92,7 @@ main {
     gap: 20px;
     padding: 20px;
     margin: 0 auto;
-    border: 1px solid #ccc;
+    border: 1px solid #CDB4DB;
     background-color: white;
 }
 
@@ -102,8 +102,8 @@ main {
 
 footer {
     text-align: center;
-    background-color: #7ea2aa;
-    color: white;
+    background-color: #A2D2FF;
+    color: black;
     padding: 10px 0;
     margin-top: 20px;
 }

@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #A2D2FF;
+    color: black;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@ header h1 {
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -40,14 +40,14 @@ nav a {
 }
 
 .member-card {
-    border: 1px solid #ccc;
+    border: 1px solid #CDB4DB;
     padding: 10px;
     text-align: center;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #A2D2FF;
+    color: black;
     text-align: center;
     padding: 10px 20px;
     position: fixed;
