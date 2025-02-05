@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #A2D2FF;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    background-color: #A2D2FF;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form {
+    background-color: #EDE7F6;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #CDB4DB;
+    margin-bottom: 40px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #CDB4DB;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #CDB4DB;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+form input[type="submit"]:hover {
+    background-color: #A2D2FF;
+}
+
+#membership-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #EDE7F6;
+    border: 1px solid #CDB4DB;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+    background-color: #CDB4DB;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    background-color: #A2D2FF;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #CDB4DB;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #A2D2FF;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}

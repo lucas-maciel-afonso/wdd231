@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber</title>
+    <meta name="description" content="Join the Chamber - WDD 231 - Dynamic Web Fundamentals - Lucas Maciel Afonso">
+    <meta name="author" content="Lucas Maciel Afonso">
+    <link rel="stylesheet" href="styles/join.css">
+    <script defer src="scripts/join.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Join the Chamber</h2>
+            <form action="thankyou.html" method="get">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" title="First Name" autocomplete="given-name"
+                    required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" title="Last Name" autocomplete="family-name"
+                    required>
+
+                <label for="org-title">Organizational Title:</label>
+                <input type="text" id="org-title" name="org-title" title="Organizational Title"
+                    autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" title="Email Address" autocomplete="email"
+                    placeholder="example@example.com" required>
+
+                <label for="phone">Mobile Phone:</label>
+                <input type="tel" id="phone" name="phone" title="Mobile Phone" autocomplete="tel" required>
+
+                <label for="org-name">Organization Name:</label>
+                <input type="text" id="org-name" name="org-name" title="Organization Name" autocomplete="organization"
+                    required>
+
+                <label for="membership-level">Membership Level:</label>
+                <select id="membership-level" name="membership-level" title="Membership Level" required>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Organization Description:</label>
+                <textarea id="description" name="description" title="Organization Description"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section id="membership-cards">
+            <div class="card" id="np-card">
+                <h3>NP Membership</h3>
+                <a href="#" onclick="showModal('np-modal')">More Info</a>
+            </div>
+            <div class="card" id="bronze-card">
+                <h3>Bronze Membership</h3>
+                <a href="#" onclick="showModal('bronze-modal')">More Info</a>
+            </div>
+            <div class="card" id="silver-card">
+                <h3>Silver Membership</h3>
+                <a href="#" onclick="showModal('silver-modal')">More Info</a>
+            </div>
+            <div class="card" id="gold-card">
+                <h3>Gold Membership</h3>
+                <a href="#" onclick="showModal('gold-modal')">More Info</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Lucas Maciel Afonso • Acre, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- Modals -->
+    <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('np-modal')">&times;</span>
+            <h2>NP Membership Benefits</h2>
+            <p>Details about NP Membership benefits...</p>
+        </div>
+    </div>
+
+    <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+            <h2>Bronze Membership Benefits</h2>
+            <p>Details about Bronze Membership benefits...</p>
+        </div>
+    </div>
+
+    <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+            <h2>Silver Membership Benefits</h2>
+            <p>Details about Silver Membership benefits...</p>
+        </div>
+    </div>
+
+    <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+            <h2>Gold Membership Benefits</h2>
+            <p>Details about Gold Membership benefits...</p>
+        </div>
+    </div>
+</body>
+
+</html>

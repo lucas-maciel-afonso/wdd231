@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <meta name="description" content="Thank You Page - Chamber of Commerce">
+    <meta name="author" content="Lucas Maciel Afonso">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Thank You!</h2>
+            <p>Thank you for joining the Chamber of Commerce. Here is the information you provided:</p>
+            <ul>
+                <li>First Name: <span id="first-name"></span></li>
+                <li>Last Name: <span id="last-name"></span></li>
+                <li>Email: <span id="email"></span></li>
+                <li>Mobile Phone: <span id="phone"></span></li>
+                <li>Organization Name: <span id="org-name"></span></li>
+                <li>Submission Date: <span id="timestamp"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Lucas Maciel Afonso • Acre, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Populate the fields with the submitted data from the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('first-name').textContent = urlParams.get('first-name');
+        document.getElementById('last-name').textContent = urlParams.get('last-name');
+        document.getElementById('email').textContent = urlParams.get('email');
+        document.getElementById('phone').textContent = urlParams.get('phone');
+        document.getElementById('org-name').textContent = urlParams.get('org-name');
+        document.getElementById('timestamp').textContent = urlParams.get('timestamp');
+
+        // Set the current year in the footer
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
