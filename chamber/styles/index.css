@@ -61,7 +61,7 @@ main {
 
 #hero {
     position: relative;
-    background: url('/chamber/images/handshake.webp') no-repeat center center/cover;
+    background: url('/chamber/images/hero.jpg') no-repeat center center/cover;
     color: black;
     text-align: center;
     padding: 50px 20px;
