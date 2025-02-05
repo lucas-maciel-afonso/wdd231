@@ -1,5 +1,11 @@
-// Set the current year in the footer
-document.getElementById('currentyear').textContent = new Date().getFullYear();
+// Get the current year
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("currentyear").innerHTML = year;
+
+// The date the document was last modified
+let text = document.lastModified;
+document.getElementById("lastModified").innerHTML = "Last Modification: " + text;
 
 // Set the current timestamp in the hidden field
 document.getElementById('timestamp').value = new Date().toISOString();
