@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Home</title>
+    <meta name="description" content="Chamber Home Page - WDD 231 - Dynamic Web Fundamentals - Lucas Maciel Afonso">
+    <meta name="author" content="Lucas Maciel Afonso">
+    <script defer src="scripts/showWeather.js"></script>
+    <link rel="stylesheet" href="styles/indexStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Directory</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <img src="images/handshake.webp" alt="Hero Image">
+            <h2>Welcome to the Chamber of Commerce</h2>
+            <p>Connecting businesses for a stronger community.</p>
+            <a href="#" class="joinButton">Join Us</a>
+        </section>
+
+        <section id="current-events">
+            <h2>Current Events</h2>
+            <div class="event">
+                <h3>Business Networking Breakfast</h3>
+                <p>Date: February 15, 2025</p>
+                <p>Time: 8:00 AM - 10:00 AM</p>
+                <p>Location: Chamber Hall</p>
+                <p>Join us for a morning of networking with local business leaders.</p>
+            </div>
+            <div class="event">
+                <h3>Annual Chamber Gala</h3>
+                <p>Date: March 20, 2025</p>
+                <p>Time: 6:00 PM - 10:00 PM</p>
+                <p>Location: Grand Ballroom</p>
+                <p>Celebrate the achievements of our members at our annual gala.</p>
+            </div>
+        </section>
+
+        <section id="weather">
+            <h2>Weather</h2>
+            <div id="weather-info">
+                <!-- Weather will be here -->
+            </div>
+        </section>
+
+        <section id="spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="spotlight-container">
+                <!-- Spotlight cards will be here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Lucas Maciel Afonso • Acre, Brazil</p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
