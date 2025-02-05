@@ -72,9 +72,9 @@ main {
     align-items: center;
 }
 
-#hero img {
+/* #hero img {
     display: none;
-}
+} */
 
 #hero h2 {
     background-color: #A2D2FF;
