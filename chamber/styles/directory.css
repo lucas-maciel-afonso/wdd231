@@ -14,6 +14,14 @@ main h1 {
     text-align: center;
 }
 
+h2 {
+    background-color: #A2D2FF;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
