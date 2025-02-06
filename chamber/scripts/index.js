@@ -47,20 +47,31 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(members => {
             const spotlightContainer = document.querySelector('.spotlight-container');
-            const goldAndSilverMembers = members.filter(member => member.membershipLevel === 'Gold' || member.membershipLevel === 'Silver');
-            const shuffledMembers = shuffleArray(goldAndSilverMembers).slice(0, 3);
 
-            shuffledMembers.forEach(member => {
+            // Filter gold/silver members
+            const goldAndSilverMembers = members.filter(member =>
+                member.membershipLevel === 'Gold' || member.membershipLevel === 'Silver'
+            );
+
+            // Randomly select 2-3 members
+            const numMembers = Math.floor(Math.random() * 2) + 2; // 2 or 3 members
+            const selectedMembers = shuffleArray(goldAndSilverMembers).slice(0, numMembers);
+
+            // Clear existing spotlights
+            spotlightContainer.innerHTML = "";
+
+            // Append members
+            selectedMembers.forEach(member => {
                 const spotlightCard = document.createElement('div');
                 spotlightCard.classList.add('spotlight-card');
                 spotlightCard.innerHTML = `
-                    <img src="${member.logo}" alt="${member.name} Logo">
-                    <h3>${member.name}</h3>
-                    <p>${member.phone}</p>
-                    <p>${member.address}</p>
-                    <a href="${member.website}" target="_blank">${member.website}</a>
-                    <p>Membership Level: ${member.membershipLevel}</p>
-                `;
+                <img src="${member.logo}" alt="${member.name} Logo">
+                <h3>${member.name}</h3>
+                <p>${member.phone}</p>
+                <p>${member.address}</p>
+                <a href="${member.website}" target="_blank">${member.website}</a>
+                <p>Membership Level: ${member.membershipLevel}</p>
+            `;
                 spotlightContainer.appendChild(spotlightCard);
             });
         })
