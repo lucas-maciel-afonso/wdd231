@@ -1,7 +1,7 @@
 [
     {
         "name": "Gold Company 1",
-        "logo": "#",
+        "logo": "/chamber/images/hero.jpg",
         "phone": "123-456-7890",
         "address": "123 Gold Street",
         "website": "https://example.com",
@@ -9,7 +9,7 @@
     },
     {
         "name": "Silver Company 1",
-        "logo": "#",
+        "logo": "/chamber/images/hero.jpg",
         "phone": "987-654-3210",
         "address": "456 Silver Avenue",
         "website": "https://example.com",
@@ -17,7 +17,7 @@
     },
     {
         "name": "Gold Company 2",
-        "logo": "#",
+        "logo": "/chamber/images/hero.jpg",
         "phone": "123-123-1234",
         "address": "789 Gold Road",
         "website": "https://example.com",
@@ -25,7 +25,7 @@
     },
     {
         "name": "Silver Company 2",
-        "logo": "#",
+        "logo": "/chamber/images/hero.jpg",
         "phone": "321-321-4321",
         "address": "101 Silver Lane",
         "website": "https://example.com",
@@ -33,7 +33,7 @@
     },
     {
         "name": "Bronze Company 1",
-        "logo": "#",
+        "logo": "/chamber/images/hero.jpg",
         "phone": "555-555-5555",
         "address": "123 Bronze Blvd",
         "website": "https://example.com",
@@ -41,7 +41,7 @@
     },
     {
         "name": "Gold Company 3",
-        "logo": "#",
+        "logo": "/chamber/images/hero.jpg",
         "phone": "111-222-3333",
         "address": "456 Gold Avenue",
         "website": "https://example.com",
@@ -49,7 +49,7 @@
     },
     {
         "name": "Silver Company 3",
-        "logo": "#",
+        "logo": "/chamber/images/hero.jpg",
         "phone": "444-555-6666",
         "address": "789 Silver Road",
         "website": "https://example.com",
