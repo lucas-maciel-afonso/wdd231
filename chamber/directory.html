@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
-    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/directory.js"></script>
 
     <meta property="og:title" content="Chamber Directory">
     <meta property="og:type" content="website">
@@ -23,26 +23,27 @@
 <body>
     <header>
         <nav>
-            <a href="/wdd231/chamber/index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
+            <ul>
+                <li><a href="/wdd231/chamber/index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <h1>Chamber Directory</h1>
         <h2>Member Directory</h2>
         <div class="view-toggle">
-            <button onclick="toggleView('grid')">Grid View</button>
-            <button onclick="toggleView('list')">List View</button>
+            <button onclick="toggleView('grid')" aria-label="Grid View">Grid View</button>
+            <button onclick="toggleView('list')" aria-label="List View">List View</button>
         </div>
         <div class="directory"></div>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> Lucas Maciel Afonso • WDD 231</p>
+        <p>&copy; <span id="currentyear"></span> Lucas Maciel Afonso • Acre, Brazil</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/directory.js"></script>
 </body>
 
 </html>

@@ -8,19 +8,30 @@ header {
     background-color: #A2D2FF;
     color: black;
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-header h1 {
-    margin: 0;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 5px;
 }
 
 nav a {
     color: black;
     text-decoration: none;
-    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    background-color: #CDB4DB;
 }
 
 .view-toggle {
@@ -30,9 +41,11 @@ nav a {
 
 .directory {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
+    margin: 0 auto; 
+    max-width: 800px; 
 }
 
 .directory.list {
@@ -43,6 +56,8 @@ nav a {
     border: 1px solid #CDB4DB;
     padding: 10px;
     text-align: center;
+    border-radius: 10px;
+    background: #ffffff;
 }
 
 footer {
@@ -50,7 +65,6 @@ footer {
     color: black;
     text-align: center;
     padding: 10px 20px;
-    position: fixed;
+    position: relative;
     width: 100%;
-    bottom: 0;
 }
