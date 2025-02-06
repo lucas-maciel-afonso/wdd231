@@ -1,3 +1,43 @@
+// Json file
+document.addEventListener("DOMContentLoaded", function () {
+    fetch('members.json')
+        .then(response => response.json())
+        .then(data => {
+            const itemsSection = document.getElementById('items');
+            data.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                const title = document.createElement('h2');
+                title.textContent = item.name;
+                card.appendChild(title);
+
+                const figure = document.createElement('figure');
+                const img = document.createElement('img');
+                img.src = item.logo;
+                img.alt = item.name;
+                figure.appendChild(img);
+                card.appendChild(figure);
+
+                const address = document.createElement('address');
+                address.textContent = item.address;
+                card.appendChild(address);
+
+                const description = document.createElement('p');
+                description.textContent = `Phone: ${item.phone}`;
+                card.appendChild(description);
+
+                const website = document.createElement('a');
+                website.href = item.website;
+                website.textContent = 'Learn More';
+                card.appendChild(website);
+
+                itemsSection.appendChild(card);
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+});
+
 // Footer
 // Get the current year
 const d = new Date();

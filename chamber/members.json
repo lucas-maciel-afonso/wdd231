@@ -30,5 +30,29 @@
         "address": "101 Silver Lane",
         "website": "https://example.com",
         "membershipLevel": "Silver"
+    },
+    {
+        "name": "Bronze Company 1",
+        "logo": "#",
+        "phone": "555-555-5555",
+        "address": "123 Bronze Blvd",
+        "website": "https://example.com",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "name": "Gold Company 3",
+        "logo": "#",
+        "phone": "111-222-3333",
+        "address": "456 Gold Avenue",
+        "website": "https://example.com",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Silver Company 3",
+        "logo": "#",
+        "phone": "444-555-6666",
+        "address": "789 Silver Road",
+        "website": "https://example.com",
+        "membershipLevel": "Silver"
     }
 ]
