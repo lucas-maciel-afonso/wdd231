@@ -13,7 +13,8 @@ header {
     align-items: center;
 }
 
-header h1 {
+main h1 {
+    text-align: center;
     margin: 0;
 }
 
