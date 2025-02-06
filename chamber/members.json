@@ -1,7 +1,7 @@
 [
     {
         "name": "Gold Company 1",
-        "logo": "example",
+        "logo": "#",
         "phone": "123-456-7890",
         "address": "123 Gold Street",
         "website": "https://example.com",
@@ -9,7 +9,7 @@
     },
     {
         "name": "Silver Company 1",
-        "logo": "example",
+        "logo": "#",
         "phone": "987-654-3210",
         "address": "456 Silver Avenue",
         "website": "https://example.com",
@@ -17,7 +17,7 @@
     },
     {
         "name": "Gold Company 2",
-        "logo": "example",
+        "logo": "#",
         "phone": "123-123-1234",
         "address": "789 Gold Road",
         "website": "https://example.com",
@@ -25,7 +25,7 @@
     },
     {
         "name": "Silver Company 2",
-        "logo": "example",
+        "logo": "#",
         "phone": "321-321-4321",
         "address": "101 Silver Lane",
         "website": "https://example.com",
