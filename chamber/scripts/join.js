@@ -19,3 +19,9 @@ function showModal(modalId) {
 function closeModal(modalId) {
     document.getElementById(modalId).style.display = 'none';
 }
+
+// Toggle mobile menu
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    const nav = document.getElementById('main-nav').querySelector('ul');
+    nav.classList.toggle('active');
+});
